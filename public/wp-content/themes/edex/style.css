@@ -1,7 +1,7 @@
 /*
     Theme Name: JPES
     Description: JPES base on HTML5 Blank WordPress Theme
-    Version: 0.1.1
+    Version: 0.1.6
     Author: Martin Tutko (@martintutko)
     Author URI: http://www.martintutko.com
     Tags: HTML5, CSS3
@@ -23,7 +23,7 @@ a, .wpb_button, .wheel-link{transition: background-color 0.2s, color 0.2s;}
 .wheel-wrapper .wheel-content .wheel-title{letter-spacing: 0.03em; margin: 0}
 .wheel-wrapper .wheel-content .item .wheel-slide-title{font-weight: 900; letter-spacing: 0.02em}
 /* .wheel-wrapper .wheel-content .item .wheel-slide-title:before{top: 50% !important; margin-top: calc(-65px/2 + 16px) !important;background-image: url(./images/icons/JPES-Icons-01a.png);} */
-.wheel-wrapper .wheel-content .item .wheel-slide-title:before{top: 22px !important;background-image: url(./images/icons/JPES-Icons-01a.png);}
+.wheel-wrapper .wheel-content .item .wheel-slide-title:before{top: 22px !important;}
 .wheel-wrapper .wheel-content .item .wheel-slide-content{color: white}
 .wheel-wrapper .wheel-content .wheel-link:hover{background-color: #A10000;}
 .vc_btn-edex{font-family: 'Big Shoulders Display', cursive; font-weight: 700; letter-spacing: 0.05em; background-color: #A10000 !important}
@@ -36,6 +36,21 @@ button, input[type=submit], input[type=button]{background-color: black}
 main.has-sidebar article .view-article:hover{background-color: #A10000;}
 main.has-sidebar article h2 a:hover{color: #450101}
 .my-link{background-image: linear-gradient(to right,#A80000,#810101,#450101);}
+.wheel-wrapper .wheel-content .item .wheel-slide-title:before,
+.wheel-wrapper .wheel-content .wheel-link:before,
+.wheel-wrapper .wheel-content .item .wheel-slide-content .vc_btn:before,
+.vc_row .wpb_button i{background-image: url(./images/icons/JPES-Icons-02a.png);}
+.wheel-wrapper .wheel-content .wheel-link:before,
+.vc_row .wpb_button i{width: 30px;height: 30px;}
+.vc_row .wpb_button.wpb_btn-dark-grey i {background-position: -473px -123px;}
+.wheel-wrapper .wheel-content .wheel-link:before,
+.vc_row .wpb_button:hover i {background-position: -570px -38px!important;}
+.vc_row .wpb_button.contact-person.wpb_btn-dark-grey i {background-position: -473px -84px;}
+.vc_row .wpb_button.contact-person:hover i {background-position: -572px 1px!important;}
+.vc_row .wpb_button.contact-person.wpb_btn-dark-blue i {background-position: -552px -84px;}
 @media (min-width: 768px) {
     .wrapper{font-size: 18px}
+}
+@media only screen and (min-width: 992px) {
+    .footer .logo-bottom img {height: 150px;}
 }
