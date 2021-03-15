@@ -1,0 +1,104 @@
+0000.000 (0) Opened log file at time: Tue, 27 Feb 2018 06:43:09 +0000 on http://www.edex.education
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.10.3 WP: 4.2.3 PHP: 5.6.33 (Linux hp154.hostpapa.com 3.10.0-714.10.2.lve1.4.79.el6h.x86_64 #1 SMP Thu Jan 4 14:26:00 EST 2018 x86_64) MySQL:  Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 128M (used: 4.8M | 5M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.545 (0) Free space on disk containing Updraft's temporary directory: 497686.6 Mb
+0000.560 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.562 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.579 (0) Requesting semaphore lock (fd)
+0000.583 (0) Semaphore (fd) was stuck, set lock time to 2018-02-27 06:43:10
+0000.588 (0) Semaphore (fd) reset to 1
+0000.593 (0) Set semaphore last lock (fd) time to 2018-02-27 06:43:10
+0000.596 (0) Semaphore lock (fd) complete
+0000.606 (0) Backup run: resumption=0, nonce=1fedc581254c, begun at=1519713789 (1s ago), job type=backup
+0000.611 (0) Scheduling a resumption (1) after 300 seconds (1519714090) in case this run gets aborted
+0000.700 (0) Checking if we have a zip executable available
+0000.702 (0) Testing: /usr/bin/zip
+0000.795 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.924 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.927 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.929 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=128) (out=105) (deflated 18%)
+0000.932 (0) Output: total bytes=128, compressed=105 -> 18% savings
+0000.957 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=135) (out=111) (deflated 18%)
+0000.961 (0) Output: total bytes=263, compressed=216 -> 18% savings
+0001.123 (0) Working binary zip found: /usr/bin/zip
+0001.130 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0001.132 (0) Creation of backups of directories: beginning
+0001.139 (0) No backup of plugins: excluded by user's options
+0001.142 (0) No backup of themes: excluded by user's options
+0001.144 (0) No backup of uploads: excluded by user's options
+0001.147 (0) No backup of others: excluded by user's options
+0001.158 (0) Saving backup status to database (elements: 0)
+0001.163 (0) Beginning creation of database dump (WordPress DB)
+0001.182 (0) Testing: /usr/bin/mysqldump
+0002.660 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0002.672 (0) Table wp_options: Total expected rows (approximate): 258
+0002.922 (0) Table wp_options: Total rows added: 260 in 0.25 seconds
+0002.925 (0) Table wp_options: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_options.table.gz - 128.1 Kb)
+0002.937 (0) Table wp_users: Total expected rows (approximate): 2
+0002.942 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0002.945 (0) Table wp_users: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_users.table.gz - 0.6 Kb)
+0002.954 (0) Table wp_usermeta: Total expected rows (approximate): 35
+0002.961 (0) Table wp_usermeta: Total rows added: 35 in 0.00 seconds
+0002.963 (0) Table wp_usermeta: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_usermeta.table.gz - 1.1 Kb)
+0002.971 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0002.976 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0002.978 (0) Table wp_commentmeta: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_commentmeta.table.gz - 0.4 Kb)
+0002.988 (0) Table wp_comments: Total expected rows (approximate): 0
+0002.994 (0) Table wp_comments: Total rows added: 0 in 0.00 seconds
+0002.996 (0) Table wp_comments: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_comments.table.gz - 0.5 Kb)
+0003.005 (0) Table wp_links: Total expected rows (approximate): 0
+0003.011 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0003.013 (0) Table wp_links: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_links.table.gz - 0.4 Kb)
+0003.022 (0) Table wp_postmeta: Total expected rows (approximate): 226
+0003.034 (0) Table wp_postmeta: Total rows added: 214 in 0.01 seconds
+0003.041 (0) Table wp_postmeta: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_postmeta.table.gz - 5.5 Kb)
+0003.049 (0) Table wp_posts: Total expected rows (approximate): 91
+0003.096 (0) Table wp_posts: Total rows added: 101 in 0.04 seconds
+0003.099 (0) Table wp_posts: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_posts.table.gz - 23.2 Kb)
+0003.107 (0) Table wp_term_relationships: Total expected rows (approximate): 18
+0003.112 (0) Table wp_term_relationships: Total rows added: 16 in 0.00 seconds
+0003.115 (0) Table wp_term_relationships: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_term_relationships.table.gz - 0.4 Kb)
+0003.123 (0) Table wp_term_taxonomy: Total expected rows (approximate): 3
+0003.128 (0) Table wp_term_taxonomy: Total rows added: 3 in 0.00 seconds
+0003.131 (0) Table wp_term_taxonomy: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_term_taxonomy.table.gz - 0.4 Kb)
+0003.138 (0) Table wp_terms: Total expected rows (approximate): 3
+0003.143 (0) Table wp_terms: Total rows added: 3 in 0.00 seconds
+0003.145 (0) Table wp_terms: finishing file (backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_terms.table.gz - 0.4 Kb)
+0003.153 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_options.table.gz (1/11): adding to final database dump
+0003.224 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_users.table.gz (2/11): adding to final database dump
+0003.231 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_usermeta.table.gz (3/11): adding to final database dump
+0003.234 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_commentmeta.table.gz (4/11): adding to final database dump
+0003.236 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_comments.table.gz (5/11): adding to final database dump
+0003.239 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_links.table.gz (6/11): adding to final database dump
+0003.241 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_postmeta.table.gz (7/11): adding to final database dump
+0003.247 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_posts.table.gz (8/11): adding to final database dump
+0003.262 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_term_relationships.table.gz (9/11): adding to final database dump
+0003.273 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_term_taxonomy.table.gz (10/11): adding to final database dump
+0003.276 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db-table-wp_terms.table.gz (11/11): adding to final database dump
+0003.279 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db.gz: finished writing out complete database file (128 Kb)
+0003.289 (0) Total database tables backed up: 11 (backup_2018-02-27-1743_EDEX_1fedc581254c-db.gz, size: 162960, checksum (SHA1): a758e2870311cb021b8c9bc6cd11661861883141)
+0003.294 (0) Saving backup history
+0003.304 (0) backup_2018-02-27-1743_EDEX_1fedc581254c-db.gz: db: This file has not yet been successfully uploaded: will queue
+0003.310 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0003.317 (0) Cloud backup selection (1/1):  (last)
+0003.319 (0) No remote despatch: user chose no remote backup service
+0003.323 (0) Recording as successfully uploaded: backup_2018-02-27-1743_EDEX_1fedc581254c-db.gz (0549401aeb05c2e7962d3b7a2f31b2b3)
+0003.334 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+0003.337 (0) Number of backup sets in history: 3
+0003.340 (0) Examining backup set with datestamp: 1519713789 (Feb 27 2018 06:43:09)
+0003.344 (0) 1519713789: this backup set remains non-empty (0/1); will retain in history
+0003.346 (0) Examining backup set with datestamp: 1519630089 (Feb 26 2018 07:28:09)
+0003.348 (0) 1519630089: db: this set includes a database (backup_2018-02-26-1828_EDEX_d93a09b443af-db.gz); db count is now 2
+0003.350 (0) 1519630089: db: over retain limit (1); will delete this database
+0003.352 (0) Delete file: backup_2018-02-26-1828_EDEX_d93a09b443af-db.gz, service=none
+0003.354 (0) Deleting local copy (backup_2018-02-26-1828_EDEX_d93a09b443af-db.gz)
+0003.360 (0) 1519630089: this backup set is now empty; will remove from history
+0003.379 (0) 1519630089: deleting log file (log.d93a09b443af.txt)
+0003.397 (0) Examining backup set with datestamp: 1438320480 (Jul 31 2015 05:28:00)
+0003.401 (0) 1438320480: this backup set remains non-empty (1/0); will retain in history
+0003.403 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0003.406 (0) Resume backup (1fedc581254c, 0): finish run
+0003.411 (0) Decremented the semaphore (fd) by 1
+0003.415 (0) Semaphore (fd) unlocked
+0003.418 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0003.425 (0) No email will/can be sent - the user has not configured an email address.
+0003.427 (0) The backup apparently succeeded and is now complete

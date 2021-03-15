@@ -1,0 +1,8 @@
+0000.068 (0) Opened log file at time: Tue, 23 Jan 2018 06:49:10 +0000 on http://www.edex.education
+0000.074 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.10.3 WP: 4.2.3 PHP: 5.6.33 (Linux hp154.hostpapa.com 3.10.0-714.10.2.lve1.4.79.el6h.x86_64 #1 SMP Thu Jan 4 14:26:00 EST 2018 x86_64) MySQL:  Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 128M (used: 4.8M | 5M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.523 (0) Free space on disk containing Updraft's temporary directory: 523562.7 Mb
+0000.528 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.531 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.534 (0) Requesting semaphore lock (fd)
+0000.537 (0) Semaphore lock (fd) failed (line 41)
+0000.539 (0) Failed to gain semaphore lock (fd) - another backup of this type is apparently already active - aborting (if this is wrong - i.e. if the other backup crashed without removing the lock, then another can be started after 3 minutes)

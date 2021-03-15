@@ -1,0 +1,73 @@
+version: '3'
+services:
+    database:
+        image: mysql:5.7
+        command:
+            - "--character-set-server=utf8"
+            - "--collation-server=utf8_unicode_ci"
+        restart: always
+        environment: 
+            MYSQL_USER: wordpress
+            MYSQL_DATABASE: wordpress
+            MYSQL_PASSWORD: wordpress
+            MYSQL_ROOT_PASSWORD: wordpress
+    wordpress:
+        depends_on:
+            - database
+        image: wordpress:4.1
+        ports:
+            - "8000:80" # (*)
+        restart: always
+        volumes:
+            - ./public:/var/www/html
+            - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+        environment:
+            WORDPRESS_DB_HOST: database
+            WORDPRESS_DB_NAME: wordpress
+            WORDPRESS_DB_USER: wordpress
+            WORDPRESS_DB_PASSWORD: wordpress
+    phpmyadmin:
+        depends_on:
+            - database
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8080:80 # (*)
+        restart: always
+        environment:
+            PMA_HOST: database
+    wordmove:
+        tty: true
+        depends_on:
+            - wordpress
+        image: mfuezesi/wordmove
+        restart: always
+        container_name: my_wordmove  # (+)
+        volumes:
+            - ./config:/home
+            - ./public:/var/www/html
+            - ~/.ssh:/root/.ssh      # (!)
+#######################################
+#
+# In case you want to reuse this config 
+# for another Wordpress project and 
+# them have both run *simultaneously*
+# you'll need to:
+#
+# - change wordmove's container_name
+#   to anything else - marked as (+)
+#   e.g. wordmove123
+#
+# - change the first number of ports
+#   to another one   - marked as (*)
+#   "<new_host_port>:<container_port>"
+#   e.g.
+#    - change wordpres port numbers 
+#      from "8000:80" to "8001:80"
+#    - change phmyadmin port numbers 
+#      from "8080:80" to "8081:80
+#    - change database port numbers 
+#      form "3307:3306" to "3308:3306" 
+#
+# (!) Copy your local .ssh keys only if 
+#     necessary to connect to remote
+#######################################

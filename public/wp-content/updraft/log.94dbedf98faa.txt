@@ -1,0 +1,98 @@
+0000.004 () Opened log file at time: Fri, 31 Jul 2015 06:39:43 +0000 on http://www.edex.education
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.10.3.1 WP: 4.2.3 PHP: 5.4.41 (Linux hp154.hostpapa.com 2.6.32-604.16.2.lve1.3.48.el6.x86_64 #1 SMP Thu Jun 11 12:13:03 EDT 2015 x86_64) MySQL: 5.6.23 Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 128M (used: 19.5M | 19.8M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.894 () Free space on disk containing Updraft's temporary directory: 960469.4 Mb
+0000.894 () Restore job started. Entities to restore: plugins, themes, uploads, others, db
+0000.914 () Entity: db
+0000.914 () restore_backup(backup_file=backup_2015-07-31-0528_EDEX_c4cce7bed7f4-db.gz, type=db, info=a:0:{}, last_one=)
+0000.914 () Unpacking backup...
+0000.915 () Database successfully unpacked
+0000.917 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.917 () Using direct MySQL access; value of use_mysqli is: 0
+0000.919 () Max packet size: 256 Mb
+0000.919 () Entering maintenance mode
+0000.919 () Enabling Maintenance mode&#8230;
+0000.920 () Backup created by: 1.10.3
+0000.920 () <strong>Backup of:</strong> http://edex.martintutko.com
+0001.021 () Content URL: http://edex.martintutko.com/wp-content
+0001.021 () Old table prefix: ex_
+0001.021 () Site information: multisite=0
+0001.024 () New table prefix: wp_
+0001.035 () Restoring table (InnoDB): ex_options - will restore as: wp_options
+0001.279 () Restoring prior UD configuration (table: wp_options; keys: 82)
+0001.506 () Table prefix has changed: changing options table field(s) accordingly (options)
+0001.508 () Options table fields changed OK
+0001.512 () Search and replacing table: wp_options: rows: 270
+0001.816 () Restoring table (InnoDB): ex_users - will restore as: wp_users
+0001.906 () Search and replacing table: wp_users: rows: 2
+0001.907 () Restoring table (InnoDB): ex_usermeta - will restore as: wp_usermeta
+0001.945 () Table prefix has changed: changing usermeta table field(s) accordingly
+0001.961 () Usermeta table fields changed OK
+0001.963 () Search and replacing table: wp_usermeta: rows: 44
+0001.966 () Restoring table (InnoDB): ex_commentmeta - will restore as: wp_commentmeta
+0002.001 () Search and replacing table: wp_commentmeta: rows: 0
+0002.002 () Restoring table (InnoDB): ex_comments - will restore as: wp_comments
+0002.037 () Search and replacing table: wp_comments: rows: 1
+0002.038 () Restoring table (InnoDB): ex_links - will restore as: wp_links
+0002.061 () Search and replacing table: wp_links: rows: 0
+0002.061 () Restoring table (InnoDB): ex_postmeta - will restore as: wp_postmeta
+0002.133 () Search and replacing table: wp_postmeta: rows: 2
+0002.135 () Restoring table (InnoDB): ex_posts - will restore as: wp_posts
+0002.259 () Search and replacing table: wp_posts: rows: 120
+0002.465 () Restoring table (InnoDB): ex_term_relationships - will restore as: wp_term_relationships
+0002.507 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0002.507 () Restoring table (InnoDB): ex_term_taxonomy - will restore as: wp_term_taxonomy
+0002.543 () Search and replacing table: wp_term_taxonomy: rows: 3
+0002.544 () Restoring table (InnoDB): ex_terms - will restore as: wp_terms
+0002.561 () Leaving maintenance mode
+0002.561 () Disabling Maintenance mode&#8230;
+0002.562 () Search and replacing table: wp_terms: rows: 3
+0002.563 () Finished: lines processed: 40 in 1.65 seconds
+0002.563 () Cleaning up rubbish...
+0002.564 () Begin search and replace (updraftplus_restored_db)
+0002.564 () Restored pre-migration site ID for this installation
+0002.569 () Database search and replace: replace http://edex.martintutko.com in backup dump with http://www.edex.education
+0002.570 () Search and replacing table: wp_commentmeta: already done
+0002.570 () Search and replacing table: wp_comments: already done
+0002.570 () Search and replacing table: wp_links: already done
+0002.570 () Search and replacing table: wp_options: already done
+0002.570 () Search and replacing table: wp_postmeta: already done
+0002.570 () Search and replacing table: wp_posts: already done
+0002.570 () Search and replacing table: wp_term_relationships: already done
+0002.570 () Search and replacing table: wp_term_taxonomy: already done
+0002.570 () Search and replacing table: wp_terms: already done
+0002.570 () Search and replacing table: wp_usermeta: already done
+0002.570 () Search and replacing table: wp_users: already done
+0002.573 () Entity: plugins
+0002.573 () restore_backup(backup_file=backup_2015-07-31-0528_EDEX_c4cce7bed7f4-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:45:"/home/edexe245/public_html/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0002.573 () Unpacking backup... (backup_2015-07-31-0528_EDEX_c4cce7bed7f4-plugins.zip, 9.1 Mb)
+0015.774 () Moving old data: filesystem method / updraft_dir is potentially possible
+0015.774 () Moving old data: can potentially use wp_filesystem method / -old
+0015.774 () Moving old data out of the way...
+0016.403 () Top-level entities being moved: cashie-commerce, index.php, updraftplus
+0016.407 () Moving unpacked backup into place...
+0017.911 () Top-level entities being moved: enhanced-media-library, index.php, contact-form-7, updraftplus, js_composer, revision-control
+0017.919 () Cleaning up rubbish...
+0017.994 () Entity: themes
+0017.994 () restore_backup(backup_file=backup_2015-07-31-0528_EDEX_c4cce7bed7f4-themes.zip, type=themes, info=a:2:{s:4:"path";s:44:"/home/edexe245/public_html/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0017.994 () Unpacking backup... (backup_2015-07-31-0528_EDEX_c4cce7bed7f4-themes.zip, 1.1 Mb)
+0023.565 () Moving old data: filesystem method / updraft_dir is potentially possible
+0023.565 () Moving old data: can potentially use wp_filesystem method / -old
+0023.591 () Moving old data out of the way...
+0023.697 () Top-level entities being moved: twentyfourteen, index.php, twentyfifteen, twentythirteen
+0023.699 () Moving unpacked backup into place...
+0023.715 () Top-level entities being moved: edex, index.php
+0023.715 () Cleaning up rubbish...
+0023.715 () Entity: uploads
+0023.715 () restore_backup(backup_file=backup_2015-07-31-0528_EDEX_c4cce7bed7f4-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:45:"/home/edexe245/public_html/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0023.716 () Unpacking backup... (backup_2015-07-31-0528_EDEX_c4cce7bed7f4-uploads.zip, 10.5 Mb)
+0034.543 () Moving old data: filesystem method / updraft_dir is potentially possible
+0034.543 () Moving old data: can potentially use wp_filesystem method / -old
+0034.543 () Moving old data out of the way...
+0034.544 () Moving unpacked backup into place...
+0034.597 () Cleaning up rubbish...
+0034.597 () Entity: others
+0034.597 () restore_backup(backup_file=backup_2015-07-31-0528_EDEX_c4cce7bed7f4-others.zip, type=others, info=a:2:{s:4:"path";s:37:"/home/edexe245/public_html/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0034.597 () Unpacking backup... (backup_2015-07-31-0528_EDEX_c4cce7bed7f4-others.zip, 0 Mb)
+0034.598 () Cleaning up rubbish...
+0034.601 () Restore successful!
+0034.601 () Restore successful
