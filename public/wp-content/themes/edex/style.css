@@ -1,7 +1,7 @@
 /*
     Theme Name: JPES
     Description: JPES base on HTML5 Blank WordPress Theme
-    Version: 0.1.6
+    Version: 0.1.7
     Author: Martin Tutko (@martintutko)
     Author URI: http://www.martintutko.com
     Tags: HTML5, CSS3
@@ -48,8 +48,15 @@ main.has-sidebar article h2 a:hover{color: #450101}
 .vc_row .wpb_button.contact-person.wpb_btn-dark-grey i {background-position: -473px -84px;}
 .vc_row .wpb_button.contact-person:hover i {background-position: -572px 1px!important;}
 .vc_row .wpb_button.contact-person.wpb_btn-dark-blue i {background-position: -552px -84px;}
+.wheel-wrapper .wheel-content .item .wheel-slide-title.icon-business{font-size: 28px;}
+.wheel-wrapper .wheel-content .item .wheel-slide-title.icon-communication{font-size: 28px; padding-top: 20px}
+@media only screen and (min-width: 433px) and (max-width: 767px){
+    .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-business{padding-top: 22px;}
+}
 @media (min-width: 768px) {
     .wrapper{font-size: 18px}
+    .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-research:before {background-position: -70px -140px;}
+    .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-business{font-size: 38px;}
 }
 @media only screen and (min-width: 992px) {
     .footer .logo-bottom img {height: 150px;}

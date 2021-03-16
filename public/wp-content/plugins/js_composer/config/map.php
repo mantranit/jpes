@@ -22,16 +22,16 @@ $colors_arr = array(
 );
 
 $wheel_icon = array(
-	__( 'SEO & Media', 'js_composer' ) => 'icon-seo',
-	__( 'Media buying', 'js_composer' ) => 'icon-media',
-	__( 'Website UX/UI', 'js_composer' ) => 'icon-website',
-	__( 'Social media', 'js_composer' ) => 'icon-social',
-	__( 'Branding', 'js_composer' ) => 'icon-branding',
-	__( 'Creative content', 'js_composer' ) => 'icon-creative',
-	__( 'Business & Partnerships development', 'js_composer' ) => "icon-business",
-	__( 'Communication planning', 'js_composer' ) => 'icon-communication',
-	__( 'Marketing Online & Offline', 'js_composer' ) => 'icon-marketing',
-	__( 'Research report & Analytics', 'js_composer' ) => 'icon-research'
+	__( 'Elektronická požární signalizace (EPS)', 'js_composer' ) => 'icon-seo',
+	__( 'Kamerové systémy (VSS)', 'js_composer' ) => 'icon-media',
+	__( 'Grafické nadstavbové systémi', 'js_composer' ) => 'icon-website',
+	__( 'Strukturovaná kabeláž a optické sítě', 'js_composer' ) => 'icon-social',
+	__( 'Elektrická kontrola vstupů (EKV)', 'js_composer' ) => 'icon-branding',
+	__( 'Perimetrická ochrana', 'js_composer' ) => 'icon-creative',
+	__( 'Koplexní servis strojů a zařízení', 'js_composer' ) => "icon-business",
+	__( 'Zemní a výkopové práce', 'js_composer' ) => 'icon-communication',
+	__( 'Měření a regulace (MAR)', 'js_composer' ) => 'icon-marketing',
+	__( 'Poplachové zabezpečovací a tísňové systémy (PZTS)', 'js_composer' ) => 'icon-research'
 );
 
 $target_arr = array(
