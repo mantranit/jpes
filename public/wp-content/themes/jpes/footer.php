@@ -25,8 +25,8 @@
 							<div class="navbar-brand">
 								<div class="navbar-social">
 									
-									<a class="fa fa-twitter" href="#"></a>
-                                    <a class="fa fa-facebook" href="#"></a>
+									<a class="fa fa-envelope" href="mailto:office@jpes.cz"></a>
+                                    <a class="fa fa-phone" href="tel:+420 720 984 246"></a>
                                     <a class="fa fa-linkedin" href="#"></a>
 									
 								</div>

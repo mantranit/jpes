@@ -10,7 +10,7 @@
 \*------------------------------------*/
 
 // Load any external files you have here
-const JPES_VERSION = '0.1.7';
+const JPES_VERSION = '0.1.9';
 
 /*------------------------------------*\
 	Theme Support

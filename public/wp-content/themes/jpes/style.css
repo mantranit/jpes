@@ -1,7 +1,7 @@
 /*
     Theme Name: JPES
     Description: JPES base on HTML5 Blank WordPress Theme
-    Version: 0.1.7
+    Version: 0.1.9
     Author: Martin Tutko (@martintutko)
     Author URI: http://www.martintutko.com
     Tags: HTML5, CSS3
@@ -12,6 +12,7 @@
 a{color: #A10000}
 .breadcrumb a{color: #A10000}
 .vc_slide_testimonial .testimonial-logo img{max-height: 130px; width: auto}
+p{line-height: 2.8rem}
 
 /* NEW STYLE FOR JPES */
 a, .wpb_button, .wheel-link{transition: background-color 0.2s, color 0.2s;}
@@ -22,7 +23,6 @@ a, .wpb_button, .wheel-link{transition: background-color 0.2s, color 0.2s;}
 .vc_row h1, .vc_row h2, .vc_row h3, .vc_row h4, .vc_row h5, .vc_row h6{font-family: 'Big Shoulders Display', cursive;}
 .wheel-wrapper .wheel-content .wheel-title{letter-spacing: 0.03em; margin: 0}
 .wheel-wrapper .wheel-content .item .wheel-slide-title{font-weight: 900; letter-spacing: 0.02em}
-/* .wheel-wrapper .wheel-content .item .wheel-slide-title:before{top: 50% !important; margin-top: calc(-65px/2 + 16px) !important;background-image: url(./images/icons/JPES-Icons-01a.png);} */
 .wheel-wrapper .wheel-content .item .wheel-slide-title:before{top: 22px !important;}
 .wheel-wrapper .wheel-content .item .wheel-slide-content{color: white}
 .wheel-wrapper .wheel-content .wheel-link:hover{background-color: #A10000;}
@@ -50,6 +50,10 @@ main.has-sidebar article h2 a:hover{color: #450101}
 .vc_row .wpb_button.contact-person.wpb_btn-dark-blue i {background-position: -552px -84px;}
 .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-business{font-size: 28px;}
 .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-communication{font-size: 28px; padding-top: 20px}
+.image-left-box .container .vc_column_container:first-child{margin-top: 0;}
+.contact-new{background-image: linear-gradient(to right,#A80000,#810101,#450101); color: white; text-align: center; padding: 40px;}
+.contact-new .vc_column_container  .vc_btn{background-color: #000; margin: 30px; padding: 13px 50px;font-weight: bold;}
+.contact-new a{color: #fff}
 @media only screen and (min-width: 433px) and (max-width: 767px){
     .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-business{padding-top: 22px;}
 }
@@ -61,3 +65,21 @@ main.has-sidebar article h2 a:hover{color: #450101}
 @media only screen and (min-width: 992px) {
     .footer .logo-bottom img {height: 150px;}
 }
+
+/* start hide social menu at top */
+.header .top-header .top-nav .navbar-social{visibility: hidden}
+@media only screen and (max-width: 432px) {
+    .header .top-header .logo{margin-top: 90px;}
+    .header .top-header .top-nav{padding-bottom: 71px;}
+}
+@media only screen and (min-width: 433px) and (max-width: 599px) {
+    .header .top-header .top-nav .navbar-social{display: none}
+    .header .top-header .top-nav .contact-us{float: none; margin-left: 0}
+}
+@media only screen and (min-width: 768px) {
+    .header .top-header .top-nav .navbar-social{margin: 0;}
+    .header .navbar-move{margin: 0 0 30px;}
+    /* .header .navbar-move.fixed{margin: 0} */
+    .header .top-header .logo{top: 36px;}
+}
+/* end hide social menu at top */
