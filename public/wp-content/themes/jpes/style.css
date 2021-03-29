@@ -1,7 +1,7 @@
 /*
     Theme Name: JPES
     Description: JPES base on HTML5 Blank WordPress Theme
-    Version: 0.2.3
+    Version: 0.2.4
     Author: Martin Tutko (@martintutko)
     Author URI: http://www.martintutko.com
     Tags: HTML5, CSS3
@@ -55,6 +55,13 @@ main.has-sidebar article h2 a:hover{color: #450101}
 .contact-new .vc_column_container  .vc_btn{background-color: #000; margin: 30px; padding: 13px 50px;font-weight: bold;}
 .contact-new a{color: #fff}
 .vc_row .wpb_button.wpb_btn-grey i {background-position: -515px -123px;}
+.vc_slide_testimonial .testimonial-logo img{margin: 0 auto;}
+.vc_carousel .slick-dots li button{background: url(./images/icons/icon-sprite.png) -493px -177px no-repeat;width: 18px;height: 18px;overflow: hidden;margin: 10px 4px;border: none;}
+.vc_carousel .slick-dots li.slick-active button{background-position: -526px -177px;}
+.vc_carousel .slick-dots li button::before{display: none}
+.vc_slide_testimonial{padding: 0 10px;}
+.clients-box .vc_carousel .vc_item .entry-content{padding: 0 !important}
+.vc_carousel .slick-dots{bottom: -75px}
 @media only screen and (min-width: 433px) and (max-width: 767px){
     .wheel-wrapper .wheel-content .item .wheel-slide-title.icon-business{padding-top: 22px;}
 }

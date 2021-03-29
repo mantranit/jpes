@@ -102,8 +102,10 @@ $this->setLinktarget( $link_target );
 // wp_enqueue_style('vc_bxslider_css');
 // wp_enqueue_script('vc_swiper');
 // wp_enqueue_style('vc_swiper_css');
-wp_enqueue_script( 'vc_carousel_js' );
-wp_enqueue_style( 'vc_carousel_css' );
+// wp_enqueue_script( 'vc_carousel_js' );
+// wp_enqueue_style( 'vc_carousel_css' );
+wp_enqueue_style( 'slick' );
+wp_enqueue_script( 'slick' );
 
 $options = array();
 // Convert keys to Camel case.
@@ -121,24 +123,11 @@ $carousel_id = 'vc_carousel-' . WPBakeryShortCode_Vc_Carousel::getCarouselIndex(
 <div class="<?php echo apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $css_class, $this->settings['base'], $atts ) ?>">
 	<div class="wpb_wrapper">
 		<?php echo  wpb_widget_title( array( 'title' => $title, 'extraclass' => 'wpb_gallery_heading' ) ) ?>
-		<div id="<?php echo $carousel_id ?>" data-ride="vc_carousel"
-			 data-wrap="<?php echo $wrap === 'yes' ? 'true' : 'false' ?>"
-			 data-interval="<?php echo $autoplay == 'yes' ? $speed : 0 ?>" data-auto-height="true"
-			 data-mode="<?php echo $mode ?>" data-partial="<?php echo $partial_view === 'yes' ? 'true' : 'false' ?>"
-			 data-per-view="<?php echo $slides_per_view ?>"
-			 data-hide-on-end="<?php echo $autoplay == 'yes' ? 'false' : 'true' ?>" class="vc_carousel vc_slide">
-			<?php if ( $hide_pagination_control !== 'yes' ): ?>
-			<!-- Indicators -->
-			<ol class="vc_carousel-indicators">
-				<?php for ( $i = 0; $i < ceil(count( $posts )/$slides_per_view); $i ++ ): ?>
-				<li data-target="#<?php echo $carousel_id ?>" data-slide-to="<?php echo $i ?>"></li>
-				<?php endfor; ?>
-			</ol>
-			<?php endif; ?>
+		<div class="vc_carousel vc_slide">
 			<!-- Wrapper for slides -->
 			<div class="vc_carousel-inner">
 				<div class="vc_carousel-slideline">
-					<div class="vc_carousel-slideline-inner">
+					<div class="vc_carousel-slideline-inner" id="<?php echo $carousel_id ?>">
 						<?php foreach ( $posts as $post ): ?>
 						<?php
 						$blocks_to_build = $post->custom_user_teaser === true ? $post->custom_teaser_blocks : $teaser_blocks;
@@ -155,16 +144,35 @@ $carousel_id = 'vc_carousel-' . WPBakeryShortCode_Vc_Carousel::getCarouselIndex(
 					</div>
 				</div>
 			</div>
-			<?php if ( $hide_prev_next_buttons !== 'yes' ): ?>
-			<!-- Controls -->
-			<a class="vc_left vc_carousel-control" href="#<?php echo $carousel_id ?>" data-slide="prev">
-				<span class="icon-prev"></span>
-			</a>
-			<a class="vc_right vc_carousel-control" href="#<?php echo $carousel_id ?>" data-slide="next">
-				<span class="icon-next"></span>
-			</a>
-			<?php endif; ?>
 		</div>
 	</div>
 </div>
+
+<script>
+$(function(){
+    $('#<?= $carousel_id ?>').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: <?= $slides_per_view ?>,
+        slidesToScroll: <?= $slides_per_view ?>,
+		autoplay: <?php echo $autoplay == 'yes' ? 'false' : 'true' ?>,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: <?= $slides_per_view > 2 ? 2 : $slides_per_view ?>,
+					slidesToScroll: <?= $slides_per_view > 2 ? 2 : $slides_per_view ?>
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+					slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+</script>
 <?php return; ?>
