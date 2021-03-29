@@ -68,10 +68,10 @@ $table_prefix  = 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-ini_set('display_errors','Off');
-ini_set('error_reporting', E_ALL );
-define('WP_DEBUG', false);
-define('WP_DEBUG_DISPLAY', false);
+// ini_set('display_errors','Off');
+// ini_set('error_reporting', E_ALL );
+// define('WP_DEBUG', false);
+// define('WP_DEBUG_DISPLAY', false);
 // define('WP_DEBUG', false);
 
 // If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact

@@ -10,7 +10,7 @@
 \*------------------------------------*/
 
 // Load any external files you have here
-const JPES_VERSION = '0.1.9';
+const JPES_VERSION = '0.2.3';
 
 /*------------------------------------*\
 	Theme Support
@@ -534,3 +534,44 @@ require_once 'widgets/MySocial.php';
 	My MetaBox
 \*------------------------------------*/
 require_once 'metabox/BoxLink.php';
+
+function update_term_meta( $term_id, $meta_key, $meta_value, $prev_value = '' ) {
+    if ( wp_term_is_shared( $term_id ) ) {
+        return new WP_Error( 'ambiguous_term_id', __( 'Term meta cannot be added to terms that are shared between taxonomies.' ), $term_id );
+    }
+ 
+    return update_metadata( 'term', $term_id, $meta_key, $meta_value, $prev_value );
+}
+
+function wp_term_is_shared( $term_id ) {
+    global $wpdb;
+ 
+    if ( get_option( 'finished_splitting_shared_terms' ) ) {
+        return false;
+    }
+ 
+    $tt_count = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM $wpdb->term_taxonomy WHERE term_id = %d", $term_id ) );
+ 
+    return $tt_count > 1;
+}
+
+// add wpColorPickerL10n repair
+
+    if( is_admin() ){
+    add_action( 'wp_default_scripts', 'wp_default_custom_scripts' );
+    function wp_default_custom_scripts( $scripts ){
+        $scripts->add( 'wp-color-picker', "/wp-admin/js/color-picker.min.js", array( 'iris' ), false, 1 );
+        did_action( 'init' ) && $scripts->localize(
+            'wp-color-picker',
+            'wpColorPickerL10n',
+            array(
+                'clear'            => __( 'Clear' ),
+                'clearAriaLabel'   => __( 'Clear color' ),
+                'defaultString'    => __( 'Default' ),
+                'defaultAriaLabel' => __( 'Select default color' ),
+                'pick'             => __( 'Select Color' ),
+                'defaultLabel'     => __( 'Color value' ),
+            )
+        );
+    }
+}

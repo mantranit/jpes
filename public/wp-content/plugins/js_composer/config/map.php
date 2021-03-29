@@ -3141,7 +3141,7 @@ vc_map( array(
 class VcSharedLibrary {
 	// Here we will store plugin wise (shared) settings. Colors, Locations, Sizes, etc...
 	private static $colors = array(
-		'Edex' => 'edex',
+		'JPES' => 'edex',
 		'Blue' => 'blue',
 		'Turquoise' => 'turquoise',
 		'Pink' => 'pink',

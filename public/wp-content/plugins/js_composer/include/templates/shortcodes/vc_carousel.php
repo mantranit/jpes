@@ -130,7 +130,7 @@ $carousel_id = 'vc_carousel-' . WPBakeryShortCode_Vc_Carousel::getCarouselIndex(
 			<?php if ( $hide_pagination_control !== 'yes' ): ?>
 			<!-- Indicators -->
 			<ol class="vc_carousel-indicators">
-				<?php for ( $i = 0; $i < count( $posts ); $i ++ ): ?>
+				<?php for ( $i = 0; $i < ceil(count( $posts )/$slides_per_view); $i ++ ): ?>
 				<li data-target="#<?php echo $carousel_id ?>" data-slide-to="<?php echo $i ?>"></li>
 				<?php endfor; ?>
 			</ol>
